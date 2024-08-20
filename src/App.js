@@ -5,8 +5,7 @@ import Profile from "./Components/Profile";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Navigate to="/profile" replace />} />
-      <Route path="/profile" element={<Profile />} />
+      <Route path="/" element={<Profile />} />
     </Routes>
   );
 }

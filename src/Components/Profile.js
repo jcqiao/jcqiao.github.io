@@ -28,6 +28,15 @@ const Profile = () => {
           height: "100%"
         }}
       >
+        <Box>
+          <div className="bubble bubble1" />
+          <div className="bubble bubble2" />
+          <div className="bubble bubble3" />
+          <div className="bubble bubble4" />
+          <div className="bubble bubble5" />
+          <div className="bubble bubble3" />
+        </Box>
+        {/* coner */}
         <Box
           sx={{
             content: '""',
@@ -49,10 +58,20 @@ const Profile = () => {
             spacing={2}
             sx={{ height: "100%" }}
             alignContent="center"
+            justifyContent="center"
           >
             {/* 左侧部分 */}
-            <Grid item xs={12} sm={6}>
-              <Box textAlign="center" mt={5}>
+            <Grid
+              item
+              xs={12}
+              sm={5}
+              sx={{
+                display: "flex",
+                alignContent: "center",
+                alignItems: "center"
+              }}
+            >
+              <Box textAlign="center">
                 <Avatar
                   alt="Chunqiao"
                   src={avatar}
@@ -79,9 +98,9 @@ const Profile = () => {
               flexItem
               sx={{ borderStyle: "dashed" }}
             />
-            <Grid item xs={12} sm={5}>
-              <Box mt={4}>
-                <Typography variant="h5" component="h2" gutterBottom>
+            <Grid item xs={12} sm={6}>
+              <Box pl={3}>
+                <Typography variant="h4" component="h3" gutterBottom>
                   About Me
                 </Typography>
                 <Typography variant="body1" paragraph>
