@@ -2,7 +2,7 @@ import React from "react";
 import { Box } from "@mui/material";
 import Layout from "./Layout";
 import PageOne from "./PageOne/PageOne";
-import "./profile.css";
+import styles from "./profile.module.css";
 
 const Profile = () => {
   const baseStyle = {
@@ -15,7 +15,7 @@ const Profile = () => {
     height: "100%"
   };
   return (
-    <Box className="profile-card">
+    <Box className={styles.profileCard}>
       <Box sx={baseStyle}>
         <Layout />
         <PageOne />
