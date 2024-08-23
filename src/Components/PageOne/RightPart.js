@@ -9,9 +9,8 @@ function RightPart() {
           About Me
         </Typography>
         <Typography variant="body1" paragraph>
-          I am a dedicated Front-End Developer with over 4 years of experience,
-          passionate about creating user-friendly and highly efficient web
-          applications.
+          I am a frontend developer with over 4 years of experience, passionate
+          about creating user-friendly and highly efficient web applications.
         </Typography>
 
         <Typography variant="body1" paragraph>

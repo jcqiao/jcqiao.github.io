@@ -24,7 +24,7 @@ function LeftPart() {
           Chunqiao Jiang
         </Typography>
         <Typography variant="h6" color="textSecondary" paragraph>
-          Front-End Developer
+          Frontend Developer
         </Typography>
         <Typography variant="h6" color="textSecondary" paragraph>
           Blender & Game Developer
