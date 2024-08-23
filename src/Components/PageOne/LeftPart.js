@@ -30,7 +30,11 @@ function LeftPart() {
           Blender & Game Developer
         </Typography>
         <IconButton aria-label="visit my github" onClick={goto}>
-          <GitHubIcon sx={{ position: "absolute" }} />
+          <GitHubIcon
+            sx={{
+              position: "relative"
+            }}
+          />
         </IconButton>
       </Box>
     </Grid>
