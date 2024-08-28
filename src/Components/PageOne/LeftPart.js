@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography, Avatar, Grid, Box, IconButton } from "@mui/material";
-import avatar from "../../assets/avatar.png";
+import avatar from "../../assets/avatar.jpeg";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 function LeftPart() {
