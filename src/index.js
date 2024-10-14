@@ -4,13 +4,45 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
+const theme = createTheme({
+  typography: {
+    h4: {
+      fontSize: '1.5rem !important', 
+      '@media (min-width:600px)': {
+        fontSize: '1rem !important', 
+      },
+      '@media (min-width:960px)': {
+        fontSize: '1.5rem !important',
+      },
+      '@media (min-width:1280px)': {
+        fontSize: '2rem !important', 
+      },
+    },
+    body1: {
+      fontSize: '1rem !important',
+      '@media (min-width:600px)': {
+        fontSize: '0.85rem !important', 
+      },
+      '@media (min-width:960px)': {
+        fontSize: '1rem !important', 
+      },
+      '@media (min-width:1280px)': {
+        fontSize: '1.25rem !important', 
+      },
+    },
+  },
+});
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
+    <ThemeProvider theme={theme}>
+      <Router>
+        <App />
+      </Router>
+    </ThemeProvider>
   </React.StrictMode>
 );
 
